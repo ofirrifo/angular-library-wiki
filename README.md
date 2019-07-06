@@ -8,4 +8,5 @@ make sure the following are install
 - Git
 
 ## Steps to Generate Angular Library
-- Execute this command `ng new <library-name> --create-application=false` to scaffolding our Angular Library.
+- Scaffolding project `ng new <project-name> --create-application=false`
+- Generate library `ng generate library <library-name>`
