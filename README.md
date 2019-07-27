@@ -29,3 +29,19 @@ Add file `.prettierrc` to root of the project
 ## Add License 
 
 ## Update README.md file
+
+## Setup Jest
+### package.json
+1. Remove the following devDependencies
+   "@types/jasmine": "~3.3.15",
+   "@types/jasminewd2": "~2.0.3",
+   "jasmine-core": "~3.4.0",
+   "jasmine-spec-reporter": "~4.2.1",
+   "karma": "~4.2.0",
+   "karma-chrome-launcher": "~3.0.0",
+   "karma-coverage-istanbul-reporter": "~2.1.0",
+   "karma-jasmine": "~2.0.1",
+   "karma-jasmine-html-reporter": "^1.4.0",
+2. install requierd jest npm packages
+   `npm i -D @types/jest jest jest-preset-angular`
+3. add to scripts `"lib:test": "jest"`
