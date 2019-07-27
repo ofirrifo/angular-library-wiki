@@ -47,3 +47,19 @@ Add file `.prettierrc` to root of the project
 2. install requierd jest npm packages
    `npm i -D @types/jest jest jest-preset-angular`
 3. add to scripts `"lib:test": "jest"`
+
+### add jest.config.js file to the root of the project
+```js
+module.exports = {
+  preset: "jest-preset-angular",
+  roots: ['projects/<replace-to-lib-name>/src'],
+  setupFilesAfterEnv: ['<rootDir>/projects/<replace-to-lib-name>/src/setup-jest.ts'],
+  globals: {
+    'ts-jest': {
+      tsConfig: '<rootDir>/projects/<replace-to-lib-name>/tsconfig.spec.json'
+    },
+  },
+};
+
+
+```
