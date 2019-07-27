@@ -66,7 +66,7 @@ module.exports = {
 - replace jasmine to jest
 - remove "src/test.ts"
 
-**From**
+**Before**
 ```js
 {
   "extends": "../../tsconfig.json",
@@ -87,7 +87,7 @@ module.exports = {
 }
 ```
 
-**To**
+**After**
 ```js
 {
   "extends": "../../tsconfig.json",
