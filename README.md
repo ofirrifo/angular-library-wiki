@@ -110,3 +110,7 @@ module.exports = {
 ```js
 import 'jest-preset-angular';
 ```
+
+### Remove files
+- `projects/<replace-to-lib-name>/karma.conf.js`
+- `projects/<replace-to-lib-name>/src/test.ts`
