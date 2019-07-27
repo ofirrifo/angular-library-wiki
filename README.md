@@ -107,3 +107,6 @@ module.exports = {
 ```
 
 ### Add setup-jest.ts file `projects/<replace-to-lib-name>/src/setup-jest.ts`
+```js
+import 'jest-preset-angular';
+```
