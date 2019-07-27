@@ -48,7 +48,7 @@ Add file `.prettierrc` to root of the project
    `npm i -D @types/jest jest jest-preset-angular`
 3. add to scripts `"lib:test": "jest"`
 
-### add jest.config.js file to the root of the project
+### add `jest.config.js` file to the root of the project
 ```js
 module.exports = {
   preset: "jest-preset-angular",
@@ -62,7 +62,7 @@ module.exports = {
 };
 ```
 
-### update file `projects/<replace-to-lib-name>/tsconfig.spec.json`
+### update tsconfig.spec.json file `projects/<replace-to-lib-name>/tsconfig.spec.json`
 - replace jasmine to jest
 - remove "src/test.ts"
 
@@ -105,3 +105,5 @@ module.exports = {
   ]
 }
 ```
+
+### Add setup-jest.ts file `projects/<replace-to-lib-name>/src/setup-jest.ts`
