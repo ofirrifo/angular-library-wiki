@@ -60,6 +60,48 @@ module.exports = {
     },
   },
 };
+```
 
+### update file `projects/<replace-to-lib-name>/tsconfig.spec.json`
+- replace jasmine to jest
+- remove "src/test.ts"
 
+**From
+```js
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/spec",
+    "types": [
+      "jasmine",
+      "node"
+    ]
+  },
+  "files": [
+    "src/test.ts"
+  ],
+  "include": [
+    "**/*.spec.ts",
+    "**/*.d.ts"
+  ]
+}
+```
+
+**To
+```js
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/spec",
+    "types": [
+      "jest", 
+      "node"
+    ]
+  },
+  "files": [],
+  "include": [
+    "**/*.spec.ts",
+    "**/*.d.ts"
+  ]
+}
 ```
